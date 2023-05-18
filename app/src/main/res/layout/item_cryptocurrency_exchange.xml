@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/backgr"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded_16"
+    android:backgroundTint="@color/card_bg_color">
+
+    <ImageView
+        android:id="@+id/currency_image"
+        android:layout_width="144dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_bitcoin_logo" />
+
+    <TextView
+        android:id="@+id/currency_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:fontFamily="@font/basis_grotesque_pro_bold"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/currency_image"
+        app:layout_constraintTop_toTopOf="@+id/currency_image"
+        tools:text="BITCOIN" />
+
+    <TextView
+        style="@style/CurrencyExchangeText"
+        android:id="@+id/price_in_rub_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/currency_title"
+        app:layout_constraintStart_toStartOf="@+id/currency_title"
+        app:layout_constraintTop_toBottomOf="@+id/currency_title"
+        tools:text="245 334.06 ₽ " />
+
+    <TextView
+        style="@style/CurrencyExchangeText"
+        android:id="@+id/price_in_usd_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/price_in_rub_text"
+        app:layout_constraintStart_toStartOf="@+id/price_in_rub_text"
+        app:layout_constraintTop_toBottomOf="@+id/price_in_rub_text"
+        tools:text="54 232.31 $" />
+
+    <TextView
+        style="@style/CurrencyExchangeText"
+        android:id="@+id/price_in_eur_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/price_in_usd_text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/price_in_usd_text"
+        app:layout_constraintTop_toBottomOf="@+id/price_in_usd_text"
+        tools:text="5 321.43 €" />
+
+    <TextView
+        android:id="@+id/last_update_at_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        android:fontFamily="@font/basis_grotesque_pro_regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/price_in_eur_text"
+        app:layout_constraintStart_toStartOf="@+id/price_in_eur_text"
+        app:layout_constraintTop_toBottomOf="@+id/price_in_eur_text"
+        tools:text="Последнее обновление 17.05.2023"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

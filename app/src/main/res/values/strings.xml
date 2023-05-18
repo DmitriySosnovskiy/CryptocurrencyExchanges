@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Курсы топовых криптовалют</string>
+
+    <string name="bitcoin_cryptocurrency_name">Биткоин</string>
+    <string name="ethereum_cryptocurrency_name">Ethereum</string>
+    <string name="toncoin_cryptocurrency_name">Toncoin</string>
+    <string name="dogcoin_cryptocurrency_name">Dogecoin</string>
+    <string name="twt_cryptocurrency_name">Trust Wallet Token (TWT)</string>
+    <string name="moneiro_cryptocurrency_name">Монеро</string>
+    <string name="litecoin_cryptocurrency_name">Litecoin</string>
+    <string name="binance_cryptocurrency_name">Binance Coin</string>
+    <string name="tether_cryptocurrency_name">Tether</string>
+
+    <string name="price_in_rub">%1$s ₽</string>
+    <string name="price_in_eur">%1$s €</string>
+    <string name="price_in_usd">%1$s $</string>
+    <string name="amount_near_zero">≈ 0.00</string>
+
+    <string name="last_update">Последнее обновление %1$s</string>
+    <string name="error_text">Не удалось загрузить данные</string>
+    <string name="retry_button_text">Повторить</string>
+</resources>

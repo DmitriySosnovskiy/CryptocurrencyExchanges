@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white_to_black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+    
+    <style name="CurrencyExchangeText">
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="fontFamily">@font/basis_grotesque_pro_medium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

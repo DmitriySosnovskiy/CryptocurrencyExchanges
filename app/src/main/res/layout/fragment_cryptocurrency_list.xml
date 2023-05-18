@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="16dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cryptocurrency_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="true"
+            android:paddingBottom="16dp" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/progress_lottie"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_gravity="center"
+        app:lottie_fileName="anim/lottie_loader_anim.json"
+        app:lottie_loop="true"
+        app:lottie_progress="0" />
+
+    <include
+        android:id="@+id/errorLayout"
+        layout="@layout/error_layout"
+        tools:visibility="gone" />
+
+</FrameLayout>
