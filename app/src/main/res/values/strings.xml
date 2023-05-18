@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Курсы топовых криптовалют</string>
+    <string name="app_name">Курсы криптовалют</string>
 
     <string name="bitcoin_cryptocurrency_name">Биткоин</string>
     <string name="ethereum_cryptocurrency_name">Ethereum</string>
